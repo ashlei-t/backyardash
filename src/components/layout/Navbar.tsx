@@ -1,21 +1,15 @@
-import '../App.css'
+import { Link } from 'react-router-dom';
+import '../../App.css'
 
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg fixed-top p-3">
-            <div className="pb-10">
-                <div className="mx-auto">
-                    <ul className="navbar-nav flex-row gap-3">
-                        <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Projects</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Work Experience</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Socials</a>
-                        </li>
-                    </ul>
+        <nav className="navbar">
+            <div className="navbar-content">
+                <Link to="/" className="navbar-brand">Ash</Link>
+                <div className="navbar-links">
+                    <Link to="/" className="nav-link">Home</Link>
+                    <Link to="/projects" className="nav-link">Projects</Link>
+                    <Link to="/experience" className="nav-link">Experience</Link>
                 </div>
             </div>
         </nav>
