@@ -1,4 +1,5 @@
 import { projects } from "../../constants/copy"
+import '../App.css';
 
 export default function Projects() {
   return (

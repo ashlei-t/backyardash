@@ -2,12 +2,17 @@
   --neon-green: rgb(228, 255, 73);
   --white: rgb(255, 255, 255);
   --dark-green: rgb(0, 87, 58);
+  --yellow: rgba(255, 255, 255, 0.015);
 }
 
 .intro-section {
   background-image: url('../src/assets/clouds.jpg');
   background-size: cover;
-  backdrop-filter: invert(80%);
+  height: 100vh;
+}
+
+.projects-section {
+  background-color: var(--dark-green);
   height: 100vh;
 }
 
@@ -20,21 +25,20 @@
 }
 
 .navbar {
-  background-color: var(--dark-green);
+  background-color: var(--yellow);
   color: var(--white);
   padding: 15px 20px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .navbar-content {
   max-width: 1200px;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
 }
 
