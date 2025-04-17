@@ -11,6 +11,13 @@ const Projects: React.FC = () => {
 
       <div className="projects-container">
         {/* Pokebudz Project */}
+        <div className="drag-handle">
+              <span className="title">MVP Project</span>
+              <div className="icons">
+              <button className="minimize"> + </button>
+              <button className="close">X</button>
+          </div>
+            </div>
         <div className="project-section">
           <div className="project-content">
             <div className="project-image-container">
@@ -39,7 +46,7 @@ const Projects: React.FC = () => {
 
         {/* Peluditos Project */}
         <div className="project-section">
-          <div className="project-content">
+          <div className="project-content ">
             <div className="project-image-container">
               <img
                 src="../src/assets/pokebudz.png"

@@ -28,6 +28,9 @@ h1, h2 {
 }
 
 /* Layout */
+
+
+
 .container {
   padding: 20px;
   min-height: 100vh;
@@ -135,27 +138,62 @@ h1, h2 {
 }
 
 .projects-section {
+  background-image: url('../src/assets/grass.jpg');
+  background-size: contain;
+  height: 14 0%;
+  padding-top: 100px;
+}
+
+.experience-section {
   background-image: url('../src/assets/clouds.jpg');
-  background-size: cover;
-  height: 300vh;
+  background-size: contain;
+  height: 14 0%;
   padding-top: 100px;
 }
 
 /* Projects */
 .project-section {
   padding: 60px;
-  margin-bottom: 40px;
+  margin: 0px 60px 30px;
   display: flex;
   align-items: center;
   gap: 40px;
-  background-color: var(--neon-green);
-
-  transition: transform 0.3s ease;
+  background-color: rgba(173, 255, 10, 0.703);
+  backdrop-filter: blur(1px);
+  border: 1px solid white;
 }
 
-.project-section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+.drag-handle {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  cursor: grab;
+  border-radius: 7px 7px 0 0;
+  border-bottom: 1px solid black;
+  margin: 0px 60px;
+  padding: 3px 20px;
+  align-items: center;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.icons button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.icons button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.minimize, .close {
+  font-size: 16px;
 }
 
 .project-content {
@@ -214,16 +252,6 @@ h1, h2 {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .navbar-content {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .navbar-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
 
   .project-section {
     flex-direction: column;
@@ -268,6 +296,6 @@ h1, h2 {
   }
 
   .section {
-    padding: 10px;
+    padding-top: 10px;
   }
 }
