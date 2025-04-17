@@ -10,6 +10,7 @@ const Projects: React.FC = () => {
       </div>
 
       <div className="projects-container">
+
         {/* Pokebudz Project */}
         <div className="drag-handle">
               <span className="title">MVP Project</span>
@@ -17,16 +18,9 @@ const Projects: React.FC = () => {
               <button className="minimize"> + </button>
               <button className="close">X</button>
           </div>
-            </div>
+        </div>
         <div className="project-section">
           <div className="project-content">
-            <div className="project-image-container">
-              <img
-                src="../src/assets/pokebudz.png"
-                alt="Pokebudz App Screenshot"
-                className="project-image"
-              />
-            </div>
             <div className="project-text">
               <h3 className="project-title">Pokebudz</h3>
               <p className="project-description">
@@ -41,19 +35,26 @@ const Projects: React.FC = () => {
                 <span className="tech-tag">TypeScript</span>
               </div>
             </div>
+            <div className="project-image-container">
+              <img
+                src="../src/assets/pokebudz.png"
+                alt="Pokebudz App Screenshot"
+                className="project-image"
+              />
+            </div>
           </div>
         </div>
 
         {/* Peluditos Project */}
+        <div className="drag-handle">
+              <span className="title">Peluditos</span>
+              <div className="icons">
+              <button className="minimize"> + </button>
+              <button className="close">X</button>
+          </div>
+        </div>
         <div className="project-section">
           <div className="project-content ">
-            <div className="project-image-container">
-              <img
-                src="../src/assets/pokebudz.png"
-                alt="Peluditos Platform Screenshot"
-                className="project-image"
-              />
-            </div>
             <div className="project-text">
               <h3 className="project-title">Peluditos</h3>
               <p className="project-description">
@@ -66,10 +67,24 @@ const Projects: React.FC = () => {
                 <span className="tech-tag">Express</span>
               </div>
             </div>
+            <div className="project-image-container">
+              <img
+                src="../src/assets/pokebudz.png"
+                alt="Peluditos Platform Screenshot"
+                className="project-image"
+              />
+            </div>
           </div>
         </div>
 
         {/* My Favorite Things Project */}
+        <div className="drag-handle">
+              <span className="title">AMFT</span>
+              <div className="icons">
+              <button className="minimize"> + </button>
+              <button className="close">X</button>
+          </div>
+        </div>
         <div className="project-section">
           <div className="project-content">
             <div className="project-image-container">

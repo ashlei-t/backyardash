@@ -145,8 +145,7 @@ h1, h2 {
 }
 
 .experience-section {
-  background-image: url('../src/assets/clouds.jpg');
-  background-size: contain;
+  background-color: var(--dark-green);
   height: 14 0%;
   padding-top: 100px;
 }
