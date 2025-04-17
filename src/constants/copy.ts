@@ -11,7 +11,7 @@ export const navItems = [
 ];
 
 export const intro = {
-  greeting: "🌊 hi, i'm Ashhhhhhh",
+  greeting: "Hi, I'm Ash",
   tagline: "Developer and systems thinker with a designer's eye and 10 years of tech experience. I architect intuitive technical solutions to complex business challenges, delivering measurable impact through analytical precision and creative problem-solving."
 };
 

@@ -4,6 +4,21 @@
   --dark-green: rgb(0, 87, 58);
 }
 
+.intro-section {
+  background-image: url('../src/assets/clouds.jpg');
+  background-size: cover;
+  backdrop-filter: invert(80%);
+  height: 100vh;
+}
+
+.intro-section .section-content {
+  padding-top: 300px;
+}
+
+.section-content {
+  padding: 140px;
+}
+
 .navbar {
   background-color: var(--dark-green);
   color: var(--white);
@@ -122,7 +137,6 @@ body {
   font-family: Helvetica, sans-serif;
   background-color: var(--neon-green);
   margin: 0;
-  padding-top: 60px; /* Add padding to account for fixed navbar */
 }
 
 h1 {
@@ -134,14 +148,7 @@ h1 {
   margin: 0 0 20px 0;
   transform: translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
-  color: var(--dark-green);
-  text-shadow:
-  var(--white) 1px 1px,
-  var(--white) 2px 2px,
-  var(--white) 3px 3px,
-  var(--white) 3px 3px,
-  var(--white) 4px 4px,
-  var(--white) 5px 5px;
+  color: var(--neon-green);
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -170,10 +177,6 @@ h1 {
 }
 
 @media (max-width: 480px) {
-  #root {
-    padding: 0 15px;
-  }
-
   .container {
     padding: 15px;
   }
@@ -183,20 +186,9 @@ h1 {
   }
 }
 
-.section {
-
-  border-radius: 8px;
-  margin: 20px 0;
-  padding: 20px;
-}
-
 .section-content {
-  padding: 20px;
+  padding: 140px;
   margin-bottom: 20px;
-}
-
-.intro-section {
-  margin-top: 80px;
 }
 
 .intro-greeting {
@@ -207,6 +199,7 @@ h1 {
   font-size: 1.2rem;
   line-height: 1.6;
   max-width: 800px;
+  color: var(--white)
 }
 
 .project-card {
@@ -362,9 +355,6 @@ h1 {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .section {
-    padding: 15px;
-  }
 
   .project-card {
     flex-direction: column;
@@ -394,7 +384,6 @@ h1 {
 }
 
 .main-content {
-  padding-top: 80px;
   min-height: 100vh;
 }
 
