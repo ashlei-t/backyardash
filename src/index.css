@@ -1,4 +1,4 @@
-/* :root {
+:root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -118,25 +118,6 @@ body {
   margin: 0;
 }
 
-h1 {
-  letter-spacing: -.6vw;
-  font-family: Helvetica, sans-serif;
-  font-size: 8vw;
-  font-weight: 700;
-  line-height: 11vw;
-  transform: translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
-  color: var(--dark-green);
-  text-shadow:
-  var(--white) 1px 1px,
-  var(--white) 2px 2px,
-  var(--white) 3px 3px,
-  var(--white) 3px 3px,
-  var(--white) 4px 4px,
-  var(--white) 5px 5px
-}
-
 .project-image {
   width: 40vh;
 }
- */

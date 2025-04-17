@@ -1,68 +1,91 @@
-import React, { useState } from 'react';
-import { projects } from '../constants/copy';
+import React from 'react';
 import AnimatedText from '../components/ui/AnimatedText';
 import '../App.css';
 
 const Projects: React.FC = () => {
-  const [expandedProject, setExpandedProject] = useState<string | null>(null);
-
-  const toggleProject = (projectId: string) => {
-    setExpandedProject(expandedProject === projectId ? null : projectId);
-  };
-
   return (
     <section id="projects" className="section projects-section">
       <div className="section-content">
         <AnimatedText text="Projects" tag="h2" animation="slide" className="section-title" />
       </div>
 
-      <div className="projects-list">
-        {projects.map((project) => (
-          <div key={project.id} className="project-card">
-            <div
-              className="project-header"
-              onClick={() => toggleProject(project.id)}
-            >
-              <AnimatedText
-                text={project.title}
-                tag="h3"
-                animation="slide"
-                direction="up"
-                delay={200}
-                className="project-title"
+      <div className="projects-container">
+        {/* Pokebudz Project */}
+        <div className="project-section">
+          <div className="project-content">
+            <div className="project-image-container">
+              <img
+                src="../src/assets/pokebudz.png"
+                alt="Pokebudz App Screenshot"
+                className="project-image"
               />
-              <span className="toggle-icon">
-                {expandedProject === project.id ? '−' : '+'}
-              </span>
             </div>
-
-            <div className={`project-content ${expandedProject === project.id ? 'expanded' : ''}`}>
-              <div className="project-details">
-                <AnimatedText
-                  text={project.description}
-                  tag="p"
-                  animation="fade"
-                  delay={400}
-                  className="project-description"
-                />
-                <div className="project-technologies">
-                  {project.technologies.map((tech, i) => (
-                    <span key={i} className="tech-tag">{tech}</span>
-                  ))}
-                </div>
-              </div>
-
-              <div className="project-gallery">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="project-image"
-                />
-                {/* Add more images here if available */}
+            <div className="project-text">
+              <h3 className="project-title">Pokebudz</h3>
+              <p className="project-description">
+                Poké Budz is a playful, adoption-style app I designed and built as a solo project, inspired by the nostalgic charm of retro gaming and collectible toys. The interface—styled in vibrant, pixel-art-inspired colors—mimics a Pokédex-like feel, immersing users in an experience that feels both modern and reminiscent of classic handheld games.
+              </p>
+              <p className="project-description">
+               Users take a personality-based quiz and are matched with their ideal Pokémon buddy, displayed in a UI that blends bold 90s aesthetics with intuitive interactivity. Built with React, Vite, Node/Express, and MySQL, this project showcases my ability to craft engaging, immersive frontend experiences while integrating full-stack functionality.
+              </p>
+              <div className="project-tech-stack">
+                <span className="tech-tag">React</span>
+                <span className="tech-tag">Firebase</span>
+                <span className="tech-tag">TypeScript</span>
               </div>
             </div>
           </div>
-        ))}
+        </div>
+
+        {/* Peluditos Project */}
+        <div className="project-section">
+          <div className="project-content">
+            <div className="project-image-container">
+              <img
+                src="../src/assets/pokebudz.png"
+                alt="Peluditos Platform Screenshot"
+                className="project-image"
+              />
+            </div>
+            <div className="project-text">
+              <h3 className="project-title">Peluditos</h3>
+              <p className="project-description">
+                A pet adoption platform connecting shelters with potential adopters.
+                Features a modern, responsive design with real-time updates.
+              </p>
+              <div className="project-tech-stack">
+                <span className="tech-tag">Next.js</span>
+                <span className="tech-tag">MongoDB</span>
+                <span className="tech-tag">Express</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* My Favorite Things Project */}
+        <div className="project-section">
+          <div className="project-content">
+            <div className="project-image-container">
+              <img
+                src="../src/assets/AMFT.png"
+                alt="My Favorite Things Screenshot"
+                className="project-image"
+              />
+            </div>
+            <div className="project-text">
+              <h3 className="project-title">My Favorite Things</h3>
+              <p className="project-description">
+                A personal curation of favorite items, places, and memories.
+                Built as a creative exploration of web design and animation.
+              </p>
+              <div className="project-tech-stack">
+                <span className="tech-tag">React</span>
+                <span className="tech-tag">Three.js</span>
+                <span className="tech-tag">GSAP</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
