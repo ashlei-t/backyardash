@@ -1,5 +1,7 @@
 import React from 'react';
 import AnimatedText from '../components/ui/AnimatedText';
+import Pokebudz from '../assets/pokebudz.png';
+import AMFT from '../assets/AMFT.png';
 import '../App.css';
 
 const Projects: React.FC = () => {
@@ -37,7 +39,7 @@ const Projects: React.FC = () => {
             </div>
             <div className="project-image-container">
               <img
-                src="../src/assets/pokebudz.png"
+                src={Pokebudz}
                 alt="Pokebudz App Screenshot"
                 className="project-image"
               />
@@ -69,7 +71,7 @@ const Projects: React.FC = () => {
             </div>
             <div className="project-image-container">
               <img
-                src="../src/assets/pokebudz.png"
+                src={Pokebudz}
                 alt="Peluditos Platform Screenshot"
                 className="project-image"
               />
@@ -89,7 +91,7 @@ const Projects: React.FC = () => {
           <div className="project-content">
             <div className="project-image-container">
               <img
-                src="../src/assets/AMFT.png"
+                src={AMFT}
                 alt="My Favorite Things Screenshot"
                 className="project-image"
               />
