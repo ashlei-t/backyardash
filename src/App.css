@@ -12,8 +12,11 @@
 }
 
 .projects-section {
-  background-color: var(--dark-green);
+  background-image: url('../src/assets/clouds.jpg');
+  background-size: cover;
   height: 100vh;
+  padding-top: 100px;
+  border: 1px solid red;
 }
 
 .intro-section .section-content {
@@ -21,7 +24,7 @@
 }
 
 .section-content {
-  padding: 140px;
+  padding: 10px 60px;
 }
 
 .navbar {
@@ -191,7 +194,6 @@ h1 {
 }
 
 .section-content {
-  padding: 140px;
   margin-bottom: 20px;
 }
 
@@ -207,8 +209,6 @@ h1 {
 }
 
 .project-card {
-  border: 1px solid var(--dark-green);
-  border-radius: 8px;
   padding: 20px;
   margin-bottom: 30px;
   display: flex;
@@ -464,4 +464,79 @@ h1 {
   .project-card {
     margin: 0 10px;
   }
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.project-header {
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  color: var(--dark-green);
+}
+
+.project-header:hover {
+  background-color: var(--neon-green);
+  color: var(--dark-green);
+}
+
+.project-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: var(--white);
+}
+
+.project-content.expanded {
+  max-height: 2000px;
+}
+
+.project-details {
+  padding: 20px;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  background-color: var(--neon-green);
+}
+
+.project-gallery img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.tech-tag {
+  background-color: var(--dark-green);
+  color: var(--white);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
 }

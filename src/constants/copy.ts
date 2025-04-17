@@ -20,7 +20,7 @@ export const projects = [
     id: "pokebudz",
     title: "PokeBudz",
     description: "Poké Budz is a playful, adoption-style app I designed and built as a solo project, inspired by the nostalgic charm of retro gaming and collectible toys. The interface—styled in vibrant, pixel-art-inspired colors—mimics a Pokédex-like feel, immersing users in an experience that feels both modern and reminiscent of classic handheld games. Users take a personality-based quiz and are matched with their ideal Pokémon buddy, displayed in a UI that blends bold 90s aesthetics with intuitive interactivity. Built with React, Vite, Node/Express, and MySQL, this project showcases my ability to craft engaging, immersive frontend experiences while integrating full-stack functionality.",
-    image: "/images/pokebudz.png",
+    image: "../src/assets/pokebudz.png",
     technologies: ["React", "Vite", "Node", "Express", "MySQL"],
     theme: {
       primary: "#ff5252",
