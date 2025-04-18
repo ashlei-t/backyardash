@@ -9,8 +9,8 @@
 /* Base Styles */
 body {
   font-family: Helvetica, sans-serif;
-  background-color: var(--neon-green);
   margin: 0;
+  letter-spacing: -.2px;
 }
 
 h1, h2 {
@@ -140,8 +140,9 @@ h1, h2 {
 .projects-section {
   background-image: url('../src/assets/grass.jpg');
   background-size: contain;
-  height: 14 0%;
+  height: auto;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .experience-section {
@@ -153,13 +154,26 @@ h1, h2 {
 /* Projects */
 .project-section {
   padding: 60px;
-  margin: 0px 60px 30px;
+  margin: 0px 100px 30px;
   display: flex;
   align-items: center;
   gap: 40px;
+  font-family: Helvetica, sans-serif;
+}
+
+.pokebudz {
   background-color: rgba(173, 255, 10, 0.703);
   backdrop-filter: blur(1px);
-  border: 1px solid white;
+}
+
+.peluditos {
+  background-color: rgba(15, 200, 203, 0.64);
+  backdrop-filter: blur(1px);
+}
+
+.amft {
+  background-color: rgba(255, 78, 234, 0.784);
+  backdrop-filter: blur(1px);
 }
 
 .drag-handle {
@@ -168,9 +182,8 @@ h1, h2 {
   justify-content: space-between;
   cursor: grab;
   border-radius: 7px 7px 0 0;
-  border-bottom: 1px solid black;
-  margin: 0px 60px;
-  padding: 3px 20px;
+  margin: 0px 100px;
+  padding: 3px 0px 3px 20px;
   align-items: center;
 }
 
@@ -211,8 +224,8 @@ h1, h2 {
 }
 
 .project-image {
-  width: 70%;
-  height: auto;
+  height: 40vh;
+  width: auto;
   transition: transform 0.3s ease;
 }
 

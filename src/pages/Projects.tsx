@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
               <button className="close">X</button>
           </div>
         </div>
-        <div className="project-section">
+        <div className="project-section pokebudz">
           <div className="project-content">
             <div className="project-text">
               <h3 className="project-title">Pokebudz</h3>
@@ -47,38 +47,6 @@ const Projects: React.FC = () => {
           </div>
         </div>
 
-        {/* Peluditos Project */}
-        <div className="drag-handle">
-              <span className="title">Peluditos</span>
-              <div className="icons">
-              <button className="minimize"> + </button>
-              <button className="close">X</button>
-          </div>
-        </div>
-        <div className="project-section">
-          <div className="project-content ">
-            <div className="project-text">
-              <h3 className="project-title">Peluditos</h3>
-              <p className="project-description">
-                A pet adoption platform connecting shelters with potential adopters.
-                Features a modern, responsive design with real-time updates.
-              </p>
-              <div className="project-tech-stack">
-                <span className="tech-tag">Next.js</span>
-                <span className="tech-tag">MongoDB</span>
-                <span className="tech-tag">Express</span>
-              </div>
-            </div>
-            <div className="project-image-container">
-              <img
-                src={Pokebudz}
-                alt="Peluditos Platform Screenshot"
-                className="project-image"
-              />
-            </div>
-          </div>
-        </div>
-
         {/* My Favorite Things Project */}
         <div className="drag-handle">
               <span className="title">AMFT</span>
@@ -87,7 +55,7 @@ const Projects: React.FC = () => {
               <button className="close">X</button>
           </div>
         </div>
-        <div className="project-section">
+        <div className="project-section amft">
           <div className="project-content">
             <div className="project-image-container">
               <img
@@ -107,6 +75,38 @@ const Projects: React.FC = () => {
                 <span className="tech-tag">Three.js</span>
                 <span className="tech-tag">GSAP</span>
               </div>
+            </div>
+          </div>
+        </div>
+
+                {/* Peluditos Project */}
+                <div className="drag-handle">
+              <span className="title">Peluditos</span>
+              <div className="icons">
+              <button className="minimize"> + </button>
+              <button className="close">X</button>
+          </div>
+        </div>
+        <div className="project-section peluditos">
+          <div className="project-content ">
+            <div className="project-text">
+              <h3 className="project-title">Peluditos</h3>
+              <p className="project-description">
+                A pet adoption platform connecting shelters with potential adopters.
+                Features a modern, responsive design with real-time updates.
+              </p>
+              <div className="project-tech-stack">
+                <span className="tech-tag">Next.js</span>
+                <span className="tech-tag">MongoDB</span>
+                <span className="tech-tag">Express</span>
+              </div>
+            </div>
+            <div className="project-image-container">
+              <img
+                src={Pokebudz}
+                alt="Peluditos Platform Screenshot"
+                className="project-image"
+              />
             </div>
           </div>
         </div>
