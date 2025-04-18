@@ -147,13 +147,17 @@ h1, h2 {
 }
 
 /* Projects */
+.projects-container {
+  margin: 0px 100px;
+}
+
 .project-section {
   padding: 60px;
-  margin: 0px 100px 30px;
   display: flex;
   align-items: center;
   gap: 40px;
   font-family: Helvetica, sans-serif;
+  margin-bottom: 20px;
 }
 
 .pokebudz {
@@ -177,7 +181,6 @@ h1, h2 {
   justify-content: space-between;
   cursor: grab;
   border-radius: 7px 7px 0 0;
-  margin: 0px 100px;
   padding: 3px 0px 3px 20px;
   align-items: center;
 }
@@ -287,7 +290,8 @@ h1, h2 {
 
   .project-section {
     flex-direction: column;
-    padding: 30px;
+    padding: 25px;
+    margin-bottom: 20px;
   }
 
   .project-content {
@@ -312,9 +316,26 @@ h1, h2 {
     padding: 20px 0;
   }
 
-  h1 {
-    font-size: clamp(2rem, 6vw, 4rem);
+  h1, h2 {
+    font-size: clamp(4rem, 2vw, 4rem);
     letter-spacing: -.3vw;
+  }
+
+  .experience-item {
+    padding: 10px 50px;
+    margin-top: 20px;
+  }
+
+  .intro-section .section-content {
+    padding-top: 150px;
+}
+  .section-content {
+    padding: 10px 50px;
+    margin-bottom: 20px;
+  }
+
+  .projects-container {
+    margin: 0px 30px;
   }
 }
 
@@ -329,5 +350,10 @@ h1, h2 {
 
   .section {
     padding-top: 10px;
+  }
+
+  .experience-item {
+    padding: 10px 50px;
+    margin-top: 20px;
   }
 }
