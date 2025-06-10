@@ -36,7 +36,7 @@ h3.project-title {
   margin: 0 0 20px 0;
   transform: translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
-  color: var(--neon-green);
+  color: var(--dark-green);
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
