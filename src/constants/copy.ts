@@ -44,7 +44,7 @@ export const projects = [
     id: "peluditos",
     title: "Peluditos",
     description: "Peluditos is a dynamic pet finder and matching service I contributed to as part of a group project in my full-stack program. I focused on crafting a seamless user experience and designing the adopter and agency dashboards. I utilized React and Vite to build a responsive, intuitive interface, ensuring smooth user interactions from pet browsing to adoption management. On the backend, we worked with Node/Express and MySQL, integrating efficient data handling. This project showcases my ability to create clean, interactive UIs while collaborating in a full-stack environment.",
-    image: "/images/peluditos.png",
+    image: "../src/assets/peluditos.png",
     technologies: ["React", "Vite", "Node", "Express", "MySQL"],
     theme: {
       primary: "#8bc34a",

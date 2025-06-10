@@ -27,6 +27,20 @@ h1, h2 {
   overflow-wrap: break-word;
 }
 
+h3.project-title {
+  letter-spacing: -.3vw;
+  font-family: Helvetica, sans-serif;
+  font-size: clamp(3rem, 7vw, 7rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+  transform: translate3d(0px, 0vw, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  color: var(--neon-green);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 /* Layout */
 
 

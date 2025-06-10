@@ -2,6 +2,7 @@ import React from 'react';
 import AnimatedText from '../components/ui/AnimatedText';
 import Pokebudz from '../assets/pokebudz.png';
 import AMFT from '../assets/AMFT.png';
+import Peluditos from '../assets/peluditos.png';
 import '../App.css';
 
 const Projects: React.FC = () => {
@@ -103,7 +104,7 @@ const Projects: React.FC = () => {
             </div>
             <div className="project-image-container">
               <img
-                src={Pokebudz}
+                src={Peluditos}
                 alt="Peluditos Platform Screenshot"
                 className="project-image"
               />
